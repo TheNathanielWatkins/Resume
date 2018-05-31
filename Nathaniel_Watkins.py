@@ -4,7 +4,7 @@ but I thought it'd be fun to do this with actual code.
 '''
 
 
-def display(type):
+def display(type, print_format=False):
     '''
     Returns a dict for work experience, education, or projects based on what type was requested.
     '''
@@ -20,7 +20,7 @@ def display(type):
         "\nSoftware Development Student & Home Renovations Project Manager  |  Self                                                   July 16 - Present":
         "\nTook a career break to:                                                                                                          Seattle, WA\
     * Study Software Development fundamentals, then specializing in Machine Learning\
-        \n    * Perform major renovations on my home including restoring wood, electrical, flooring, removing walls, adding closets, and more\
+        \n    * Perform major renovations on my home including restoring wood, removing walls, adding closets, and more\
         \n    * Also, occasionally volunteer or complete some contract work",
 
         "\nAssistant Property Manager (Office Manager/Bookkeeper)  |  Essex Property Trust                                            Mar 14 -  July 16":
@@ -35,7 +35,6 @@ def display(type):
         "\nProperty Manager (Business Manager)  |  Western National Group                                                              May 09 -  Feb 14":
         "\nPremier property management company setting high standards to be a cut above:                                              Orange County, CA\
     * Developed a strong customer service reputation\
-        \n    * Juggled facilities management and hands-on maintenance duties under a single-role schedule\
         \n    * Redirected the NOI trends from -5% to +2% budget variance\
         \n    * Reduced annual turnover from 71% to 29%, receiving industry awards for these accomplishments",
         }
@@ -61,7 +60,7 @@ def display(type):
 
         "\nDog Breed Classifier  |  Udacity                                                                                                      Apr 18":
         "\n* Given an image of a dog, my algorithm identifies an estimate of the canine’s breed,\
-        \n  but if supplied with an image of a human, the code identifies the resembling dog breed",
+        \n  but if supplied with an image of a human or other non-dog, the code identifies the resembling dog breed",
 
         "\nRecycle Bits  |  Hackathon                                                                                                            Feb 18":
         "\n* Earned 2nd place using Computer Vision to classify trash into distinct categories of Recyclable, Compostable or Refuse\
@@ -70,16 +69,22 @@ def display(type):
         \n  and industrial applications to create automated sorting for trash companies"
         }
 
-    if type is 'Experience':
-        return work
-    elif type is 'Education':
-        return education
-    elif type is 'Projects':
-        return projects
-    else:
-        return "I'm not quite sure what you're asking to be displayed here, but I'd be happy to help however possible!  \
-                Please make sure the input variable matches either 'Experience', 'Education', or 'Projects'.  \
-                If none of those seems right, please contact me @theNathanielW"
+    if not print_format:
+        return
+    elif print_format:
+        if type is 'Experience':
+            for job, description in work.items():
+                print(job, description)
+        elif type is 'Education':
+            for school, description in education.items():
+                print(school, description)
+        elif type is 'Projects':
+            for project, description in projects.items():
+                print(project, description)
+        else:
+            return "I'm not quite sure what you're asking to be displayed here, but I'd be happy to help however possible!  \
+                    Please make sure the input variable matches either 'Experience', 'Education', or 'Projects'.  \
+                    If none of those seems right, please contact me @theNathanielW"
 
 class skills():
     '''
