@@ -38,4 +38,4 @@ Run `Nathaniel_Watkins_Resume.ipynb` in Jupyter.
 - Open `Nathaniel_Watkins_Resume.pdf`
 - Observe all of my abilites
 - Consider how I would be a unique asset to your team.
-- Contact me via [email: theNathanielWatkins@gmail.com](mailto:theNathanielWatkins@gmail.com), phone: 657.464.4005, or [LinkedIn: in/theNathanielWatkins](https://www.linkedin.com/in/thenathanielwatkins/)
+- Contact me via email: [theNathanielWatkins@gmail.com](mailto:theNathanielWatkins@gmail.com), phone: 657.464.4005, or LinkedIn: [in/theNathanielWatkins](https://www.linkedin.com/in/thenathanielwatkins/)
