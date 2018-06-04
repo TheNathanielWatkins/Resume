@@ -1,56 +1,57 @@
 '''
 Note, I know this probably isn't the best way to generate a notebook that displays resume elements,
 but I thought it'd be fun to do this with actual code.
+
+This file of helper functions allows the notebook to be cleaner and allowed for me to have some fun with import statements.
 '''
 
 
-def display(type, print_format=False):
+def display(type, plain_format=False):
     '''
     Returns a dict for work experience, education, or projects based on what type was requested.
+
+    Change plain_format to True for the function to actually print the text.
+    It's set to False by default so that I could display the text with some Markdown formatting instead of the plain print output.
+    It's recommended to delete the duplicate Markdown cells if toggling this to True.
     '''
     work = {
         "Student Mentor  |  Udacity                                                                                                 Nov 17 -  Present":
         "\nMentoring Students through the Introduction to Programming Nanodegree by:                                                         Gig/Remote\
-    * Perform code reviews of student projects\
-        \n    * Send regular encouragement and check-ins to help students stay motivated\
-        \n    * Be available to answer questions at all hours, day or night\
-        \n    * Provide advice when students are feeling lost or don't know where to begin\
-        \n    * Help students troubleshoot and/or debug any issues they're running into",
+        * Perform code reviews of student projects with constructive feedback\
+        \n* Send regular encouragement and check-ins to help students stay motivated\
+        \n* Provide advice when students are feeling lost or don't know where to begin,\
+        \n  and help students troubleshoot and/or debug any issues they're facing",
 
         "\nSoftware Development Student & Home Renovations Project Manager  |  Self                                                   July 16 - Present":
         "\nTook a career break to:                                                                                                          Seattle, WA\
-    * Study Software Development fundamentals, then specializing in Machine Learning\
-        \n    * Perform major renovations on my home including restoring wood, removing walls, adding closets, and more\
-        \n    * Also, occasionally volunteer or complete some contract work",
+        * Study Software Development fundamentals, then Statistics, Linear Algebra, Calculus; finally specializing in Machine Learning\
+        \n* Perform major renovations on my home including restoring wood, removing walls, adding closets, and more\
+        \n* Also, occasionally volunteer (e.g. Seattle Startup Week) or complete some contract IT work",
 
         "\nAssistant Property Manager (Office Manager/Bookkeeper)  |  Essex Property Trust                                            Mar 14 -  July 16":
         "\n#1 West Coast Focused Real Estate Investment Trust:                                                                              Seattle, WA\
-    * Managed up to 7 people, onsite and semi-remote\
-        \n    * Drove rent growth while maintaining minimal resident turnover and increasing satisfaction\
-        \n    * Improved many processes/procedures and resolved decades-old discrepancies in the books\
-        \n    * Fostered trust between disparate departments through shared goals and open communication\
-        \n    * Consistently turned negative customer experiences into an ultimate positive by listening,\
-        \n      applying creative solutions and going the extra mile to ensure that they felt cared for and served",
+        * Managed up to 7 people, onsite and semi-remote\
+        \n* Drove rent growth while maintaining minimal resident turnover and increasing customer satisfaction\
+        \n* Fostered trust between disparate departments and improved many processes/procedures\
+        \n* Consistently turned negative customer experiences into an ultimate positive by listening,\
+        \n  applying creative solutions, and ensuring that they felt and served",
 
         "\nProperty Manager (Business Manager)  |  Western National Group                                                              May 09 -  Feb 14":
         "\nPremier property management company setting high standards to be a cut above:                                              Orange County, CA\
-    * Developed a strong customer service reputation\
-        \n    * Redirected the NOI trends from -5% to +2% budget variance\
-        \n    * Reduced annual turnover from 71% to 29%, receiving industry awards for these accomplishments",
+        * Developed a strong reputation for customer service and mentoring new hires\
+        \n* Redirected the NOI trends from -5% to +2% budget variance and reduced annual turnover from 71% to 29%, receiving industry awards",
         }
 
     education = {
         "Machine Learning Engineer Nanodegree  | Udacity                                           Jan 18 - Current (anticipated graduation: June 18)":
-        "\n* Mastering Model Evaluation/Validation, Supervised Learning, Deep Learning, Unsupervised Learning, Reinforcement Learning\
-        \n* Building effective ML models and learning to solve real-world problems across a wide array of fields",
+        "\nMastering Model Evaluation/Validation, Supervised Learning, Deep Learning,\
+        \nUnsupervised Learning, Reinforcement Learning through hands-on learning",
 
         "\nIntroduction to Programming Nanodegree  |  Udacity                                                                          Sept 16 - Jan 17":
-        "\n* Started with learning web technologies then built a strong foundation for serious programming in Python\
-        \n* Specialized in Data Analysis due to its relation to Machine Learning\
-        \n* Further prepared for Machine Learning by taking courses in Linear Algebra, Statistics, and other related subjects",
+        "\nStarted with learning web technologies then built a strong foundation for serious programming in Python and specialized in Data Analysis",
 
         "\nMechanical Engineering  |  University of California, Irvine                                                                Fall 06 - Fall 07":
-        "\n* 46 Units towards a Bachelor’s of Science in Mechanical Engineering"
+        "\n46 Units towards a Bachelor’s of Science in Mechanical Engineering"
         }
 
     projects = {
@@ -59,19 +60,18 @@ def display(type, print_format=False):
         \n  and how to best segment customers into distinct categories",
 
         "\nDog Breed Classifier  |  Udacity                                                                                                      Apr 18":
-        "\n* Given an image of a dog, my algorithm identifies an estimate of the canine’s breed,\
+        "\n* Given an image of a dog, my CNN identifies an estimate of the canine’s breed,\
         \n  but if supplied with an image of a human or other non-dog, the code identifies the resembling dog breed",
 
         "\nRecycle Bits  |  Hackathon                                                                                                            Feb 18":
         "\n* Earned 2nd place using Computer Vision to classify trash into distinct categories of Recyclable, Compostable or Refuse\
         \n* First implemented as a responsive web app for consumers, with a leaderboard system to encourage green behavior\
-        \n* Also envisioned a business plan to create smart trash cans that tell people which bin to put their trash into,\
-        \n  and industrial applications to create automated sorting for trash companies"
+        \n* Also envisioned a business plan to create smart trash cans and automated industrial trash sorting"
         }
 
-    if not print_format:
+    if not plain_format:
         return
-    elif print_format:
+    elif plain_format:
         if type is 'Experience':
             for job, description in work.items():
                 print(job, description)
