@@ -1,5 +1,5 @@
 # Nathaniel Watkins Resume
-> I decided to make my resume using Python (some Markdown) and a Jupyter Notebook!  Because, why not?
+> I decided to write my resume using Python (some Markdown) and a Jupyter Notebook!  Because, why not?
 
 In what may be a first, this project creates an _amazing_ resume from a Jupyter Notebook and a Python file.
 
