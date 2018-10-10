@@ -1,5 +1,5 @@
 # Nathaniel Watkins Resume
-> I decided to make my resume using Python (some Markdown) and a Jupyter Notebook!  Because, why not?
+> I decided to write my resume using Python (some Markdown) and a Jupyter Notebook!  Because, why not?
 
 In what may be a first, this project creates an _amazing_ resume from a Jupyter Notebook and a Python file.
 
@@ -28,7 +28,7 @@ Run `Nathaniel_Watkins_Resume.ipynb` in Jupyter.
   - Sans-serif: `Calibri Light`
   - Fixed-width: `Consolas`
 
-### Once I had a properly formatted screenshot, to create a presentable and searchable PDF I did the following
+### Once I had a properly formatted screenshot, to create a linked and searchable PDF I did the following
 1. _Print_ the screenshot as a PDF
 2. OCR the PDF (I used Adobe Reader X's Recognize Text feature)
 3. Fix the OCR's mistakes (I used Reader X's 'Find First Suspect' feature)
@@ -39,3 +39,6 @@ Run `Nathaniel_Watkins_Resume.ipynb` in Jupyter.
 - Observe all of my abilites
 - Consider how I would be a unique asset to your team.
 - Contact me via email: [theNathanielWatkins@gmail.com](mailto:theNathanielWatkins@gmail.com), phone: 657.464.4005, or LinkedIn: [in/theNathanielWatkins](https://www.linkedin.com/in/thenathanielwatkins/)
+
+## Contributing
+> I'm open to any and all feedback!  Please contact me at the links above or create a pull request.
