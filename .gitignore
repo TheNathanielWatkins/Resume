@@ -66,5 +66,8 @@ target/
 
 # Large and/or unimportant files/folders
 /**/customized
+/**/images
 **desktop.ini
 **.gdoc
+**.odt
+**.docx
