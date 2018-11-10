@@ -1,9 +1,17 @@
 # Nathaniel Watkins Resume
-> I decided to write my resume using Python (some Markdown) and a Jupyter Notebook!  Because, why not?
+> I previously decided to write my resume using Python (some Markdown) and a Jupyter Notebook!  Because, why not?
+Well, it turned out that even a Jupyter-inspired resume is not very ATS friendly or easily scannable within the first 5-6 seconds that most people spend looking at a resume.  So, I've done a complete rewrite of my resume which can be viewed here: [Nathaniel Watkins Resume.pdf](https://github.com/TheNathanielWatkins/Resume/blob/master/Nathaniel%20Watkins%20Resume.pdf)
 
-In what may be a first, this project creates an _amazing_ resume from a Jupyter Notebook and a Python file.
+## Legacy Versions (aka actual resumes made from notebooks)
+- All legacy versions of the resume will continue to live here in the [Legacy Version](https://github.com/TheNathanielWatkins/Resume/tree/master/Legacy%20Version) folder.
+- All the legacy files will all contain "-v1.x" at the end of their file names,
+ - except `Nathaniel_Watkins.py` as adding the version number would break compatibility.
+- The 2 versions of legacy notebooks with `Nathaniel_Watkins.py` will be updated occasionally with wording from the current resume,
+ - but the below steps to create a specifically formatted PDF with OCR'd text will not be followed.
+- The hybrid resume [Nathaniel Watkins Resume-v1.5.pdf](https://github.com/TheNathanielWatkins/Resume/blob/master/Legacy%20Version/Nathaniel%20Watkins%20Resume-v1.5.pdf) will see even less frequent wording updates.
 
-![Resume screenshot](https://github.com/TheNathanielWatkins/resume/blob/master/Nathaniel_Watkins_Resume.PNG)
+I still think this is a cool idea, but do recognize that it is the wrong strategy for the primary target audience.
+> In what may be a first, this project created an _amazing_ resume from a Jupyter Notebook and a Python file.
 
 ## Features
 - Communicates my unique strengths in a novel way
@@ -15,7 +23,7 @@ In what may be a first, this project creates an _amazing_ resume from a Jupyter 
 
 This notebook does not rely on any external packages except for the included `Nathaniel_Watkins.py` file, just make sure it's in the same folder as `Nathaniel_Watkins_Resume.ipynb`.
 
-Run `Nathaniel_Watkins_Resume.ipynb` in Jupyter.
+Open `Nathaniel_Watkins_Resume.ipynb` in Jupyter.
 
 ### To get the formatting the way I wanted, I had to perform the following tweaks
 - Rotate my 1920 x 1080 monitor to portrait mode at 1080 x 1920 (allows the notebook to fill the screen better)
